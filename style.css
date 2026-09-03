@@ -1,3 +1,8 @@
+:root {
+    --square-height: 100px;
+    --square-width: 100px;
+}
+
 .title {
     color: red;
     font-size: 45px;
@@ -10,4 +15,45 @@
     font-size: 20px;
     margin: 0;
     
+}
+
+.container {
+    width: 97%;
+    height: 800px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: row;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+.green {
+    width: var(--square-width);
+    height: var(--square-height);
+    margin: 1rem;
+    background-color: green;
+}
+
+.blue {
+    width: var(--square-width);
+    height: var(--square-height);
+    margin: 1rem;
+    background-color: blue;
+    order: -2
+}
+
+.red {
+    width: var(--square-width);
+    height: var(--square-height);
+    margin: 1rem;
+    background-color: red;
+    order: 1;
+}
+
+.yellow {
+    width: var(--square-width);
+    height: var(--square-height);
+    margin: 1rem;
+    background-color: yellow;
+    order: 3;
 }
